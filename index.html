@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-BDWXDMBJN7"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-BDWXDMBJN7');
+    </script>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="theme-color" content="#6200EE"/>
+    <title>Realtime Singlish</title>
+    <link href="styles/main.css" rel="stylesheet">
+    <link rel="manifest" href="/manifest.json">
+
+    <link rel="apple-touch-icon" sizes="57x57" href="icons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="icons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="icons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="icons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="icons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="icons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="icons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="icons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="icons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="icons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+</head>
+
+<body>
+    <div class="titles">
+        <span class="small-title">SINHALA x ENGLISH</span><br>
+        <span class="main-title"> 🇱🇰 Realtime Singlish Converter</span>
+    </div>
+    <!-- Output area-->
+    <div id="output-container" class="area-container">
+        <div id="output-area">
+            <span class="secondary-title">SINHALA OUTPUT</span><br>
+            <DIV id="output" tabindex="1">
+                Start typing below ...
+            </div> <br>
+            <button id="copy-button" onclick="copyText()">COPY TEXT</button>
+        </div>
+    </div>
+    <br>
+
+    <!-- Input area -->
+    <div id="input-container" class="area-container">
+        <div id="input-area">
+            <span class="secondary-title">SINGLISH</span><br>
+            <textarea placeholder="Enter Your text here" id="ta" onkeyup="startText();" autocomplete="off"
+                autocorrect="off" autocapitalize="off" spellcheck="false" onclick="focusOutput()"></textarea>
+        </div>
+    </div>
+
+    <script src="scripts/main.js"></script>
+    
+    <script>
+        if('serviceWorker' in navigator) {
+          navigator.serviceWorker
+                .register('sw.js')
+                .then(function() { console.log("Service Worker Registered"); });
+        }
+    </script>
+
+</body>
+
+</html>
