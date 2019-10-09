@@ -4,7 +4,7 @@ var urlsToCache = [
   '/realtime-singlish/styles/main.css',
   '/realtime-singlish/scripts/main.js',
   '/realtime-singlish/index.html',
-  '/realtime-singlish/icons/',
+  
   
 ];
 
