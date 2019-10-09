@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-BDWXDMBJN7"></script>
@@ -46,7 +46,7 @@
     <div id="output-container" class="area-container">
         <div id="output-area">
             <span class="secondary-title">SINHALA OUTPUT</span><br>
-            <DIV id="output" tabindex="1">
+            <DIV id="output" tabindex="0">
                 Start typing below ...
             </div> <br>
             <button id="copy-button" onclick="copyText()">COPY TEXT</button>
@@ -59,7 +59,7 @@
         <div id="input-area">
             <span class="secondary-title">SINGLISH</span><br>
             <textarea placeholder="Enter Your text here" id="ta" onkeyup="startText();" autocomplete="off"
-                autocorrect="off" autocapitalize="off" spellcheck="false" onclick="focusOutput()"></textarea>
+                autocorrect="off" autocapitalize="off" spellcheck="false" onclick="focusOutput()" aria-label="singlish"></textarea>
         </div>
     </div>
 
