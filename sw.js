@@ -5,6 +5,7 @@ var urlsToCache = [
   './scripts/main.js',
   './index.html',
   './',
+  './icons/',
   
 ];
 

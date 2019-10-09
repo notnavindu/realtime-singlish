@@ -3,7 +3,7 @@
     "short_name": "singlish",
     "description": "A Singlish to Sinhala Converter",
     "lang": "en-US",
-    "start_url": "/",
+    "start_url": "/realtime-singlish/index.html",
     "scope": "/",
     "display": "standalone",
     "theme_color": "#6200EE",
