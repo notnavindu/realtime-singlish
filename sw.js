@@ -1,11 +1,10 @@
 var CACHE_NAME = 'realtime-singlish';
 var version = "v02"
 var urlsToCache = [
-  './styles/main.css',
-  './scripts/main.js',
-  './index.html',
-  './',
-  './icons/',
+  '/realtime-singlish/styles/main.css',
+  '/realtime-singlish/scripts/main.js',
+  '/realtime-singlish/index.html',
+  '/realtime-singlish/icons/',
   
 ];
 
