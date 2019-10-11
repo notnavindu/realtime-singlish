@@ -1,5 +1,5 @@
 var CACHE_NAME = 'realtime-singlish';
-var version = "v04"
+var version = "-v04"
 var urlsToCache = [
   '/realtime-singlish/styles/main.css',
   '/realtime-singlish/scripts/main.js',
@@ -13,7 +13,7 @@ var urlsToCache = [
 self.addEventListener('install', function(event) {
   // Perform install steps
   event.waitUntil(
-    caches.open(CACHE_NAME)
+    caches.open(CACHE_NAME+version)
       .then(function(cache) {
         console.log('Opened cache');
         return cache.addAll(urlsToCache);
