@@ -78,3 +78,17 @@ textarea {
 .coppied{
     background-color: #03DAC6!important;
 }
+
+a{
+    color:#03DAC6;
+}
+
+.footer{
+    position: fixed;
+    left: 0px;
+    bottom: 0px;
+    height: 22px;
+    width: 100%;
+    background: #000;
+    text-align: center;
+}
