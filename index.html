@@ -62,7 +62,10 @@
     <!-- Input area -->
     <div id="input-container" class="area-container">
         <div id="input-area">
-            <span class="secondary-title">SINGLISH</span><br>
+            <span class="secondary-title">SINGLISH</span>
+            <button id="clear-button" onclick="clearText()">CLEAR</button>
+            
+            <br>
             <textarea placeholder="Enter Your text here" id="ta" onkeyup="startText();" autocomplete="off"
                 autocorrect="off" autocapitalize="off" spellcheck="false"
                 aria-label="singlish"></textarea>
@@ -72,8 +75,6 @@
     <br><br>
 
     <!--Transliteration Sceme-->
-
-
     <div class="scheme">
         <h2 style="color:#03DAC6">Cheat Sheet</h2>
 
@@ -226,11 +227,11 @@
     </div>
 
 
-
+ 
 
     <br><br>
     <div class="footer">
-        Version 2.1 <br>
+        Version 2.3 <br>
         Available on <a href="https://github.com/notnavindu/realtime-singlish">Github</a>
     </div>
 

@@ -191,3 +191,9 @@ function copyText() {
 }
 
 
+//clear text on button click
+function clearText() {
+    document.getElementById("ta").value = "";
+    startText();
+    
+}

@@ -78,7 +78,17 @@ textarea {
     border:0px;
     color: #fff;
     border-radius: 5px;
-
+}
+#clear-button{
+    width:auto;
+    height: 25px;
+    background-color: #CF6679;
+    border:0px;
+    font-size:12px;
+    color: #fff;
+    padding: 5px;
+    float:right;
+    border-radius: 5px;
 }
 
 .coppied{
