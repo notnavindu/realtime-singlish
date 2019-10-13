@@ -1,5 +1,5 @@
 var CACHE_NAME = 'realtime-singlish';
-var version = "-v05"
+var version = "-v05.1"
 var urlsToCache = [
   '/realtime-singlish/styles/main.css',
   '/realtime-singlish/scripts/main.js',
