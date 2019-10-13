@@ -162,7 +162,7 @@ function startText() {
 
 //copy the text to clipboard on button click
 function copyText() {
-    str=document.getElementById("output").innerHTML;
+    str = document.getElementById("output").innerHTML;
     // Create new element
     var el = document.createElement('textarea');
     // Set value (string to be copied)
@@ -185,14 +185,15 @@ function copyText() {
     document.getElementById("copy-button").innerHTML = "COPIED!"
 
     //Revert the button styles
-    window.setTimeout(function(){
+    window.setTimeout(function () {
         document.getElementById("copy-button").classList.remove("coppied");
         document.getElementById("copy-button").innerHTML = "COPY TEXT"
     }, 1000);
 }
 
-function focusOutput(){
-    document.getElementById("output").focus();
-    console.log("hh")
-    document.getElementById("ta").focus({preventScroll:true});
+
+function focusOutput() {
+    window.scrollTo(0,148);
+    console.log("sdf")
 }
+

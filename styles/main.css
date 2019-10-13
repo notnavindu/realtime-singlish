@@ -90,10 +90,11 @@ a{
 }
 
 .footer{
-    margin-bottom: 0px;
+    margin-top: 40px;
+    margin-bottom: 5px;
     left: 0px;
     bottom: 0px;
-    height: 22px;
+    height: 44px;
     width: 100%;
     background: #0f0f0f;
     text-align: center;
