@@ -1,4 +1,4 @@
-var VERSION = 'realtime-english-v2.0';
+var VERSION = 'realtime-english-v2.1';
 
 var cacheFirstFiles = [
     '/realtime-singlish/styles/main.css',

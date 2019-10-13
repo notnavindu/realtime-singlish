@@ -157,7 +157,6 @@ function startText() {
 
     document.getElementById("output").innerHTML = text;
 
-
 }
 
 //copy the text to clipboard on button click
@@ -190,7 +189,5 @@ function copyText() {
         document.getElementById("copy-button").innerHTML = "COPY TEXT"
     }, 1000);
 }
-
-
 
 
