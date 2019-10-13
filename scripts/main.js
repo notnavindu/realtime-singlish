@@ -192,8 +192,5 @@ function copyText() {
 }
 
 
-function focusOutput() {
-    window.scrollTo(0,148);
-    console.log("sdf")
-}
+
 
