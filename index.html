@@ -238,7 +238,6 @@
         if ('serviceWorker' in navigator) {
             navigator.serviceWorker
                 .register('sw.js')
-                .skipWaiting()
                 .then(function () { console.log("Service Worker Registered"); });
         }
     </script>
