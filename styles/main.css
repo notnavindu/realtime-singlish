@@ -1,12 +1,18 @@
 /*
+primary variant - #BB86FC
 primary - #6200EE
 secondary - #03DAC6
 */
+html{
+    width: 100%;
+}
 body{
     font-family:'Calibri', sans-serif;
-    background-color: #000;
+    background-color: #111111;
     color:#fff;
     padding: 10px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
 }
 
 .main-title{
@@ -21,7 +27,7 @@ body{
 }
 .small-title{
     font-size: 12px; 
-    color: #6200EE;
+    color: #BB86FC;
 }
 .area-container{
     width:100%;
@@ -84,11 +90,29 @@ a{
 }
 
 .footer{
-    position: fixed;
+    margin-bottom: 0px;
     left: 0px;
     bottom: 0px;
     height: 22px;
     width: 100%;
-    background: #000;
+    background: #0f0f0f;
     text-align: center;
+}
+
+.scheme{
+    width: 100%;
+    max-width: 500px;
+    margin: auto;
+}
+table{
+    width:100%;
+    border: 1px solid #4a4a4a;
+    border-collapse: collapse;
+}
+
+/* Borders */
+td {
+    border: 1px solid #4a4a4a;
+    text-align: center;
+    padding: 5px;
 }

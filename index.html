@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-BDWXDMBJN7"></script>
@@ -9,13 +10,16 @@
         gtag('js', new Date());
         gtag('config', 'G-BDWXDMBJN7');
     </script>
-    
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="theme-color" content="#6200EE"/>
+    <meta name="theme-color" content="#6200EE" />
+    <meta name="Description" content="Convert Singlish text to Sinhala Unicode">
+
+
     <title>Realtime Singlish</title>
     <link href="styles/main.css" rel="stylesheet">
-    
+
 
     <link rel="apple-touch-icon" sizes="57x57" href="icons/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="icons/apple-icon-60x60.png">
@@ -26,14 +30,14 @@
     <link rel="apple-touch-icon" sizes="144x144" href="icons/apple-icon-144x144.png">
     <link rel="apple-touch-icon" sizes="152x152" href="icons/apple-icon-152x152.png">
     <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192"  href="icons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="icons/android-icon-192x192.png">
     <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="96x96" href="icons/favicon-96x96.png">
     <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png">
     <link rel="manifest" href="./manifest.json">
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
-    
+
 
 </head>
 
@@ -59,21 +63,182 @@
         <div id="input-area">
             <span class="secondary-title">SINGLISH</span><br>
             <textarea placeholder="Enter Your text here" id="ta" onkeyup="startText();" autocomplete="off"
-                autocorrect="off" autocapitalize="off" spellcheck="false" onclick="focusOutput()" aria-label="singlish"></textarea>
+                autocorrect="off" autocapitalize="off" spellcheck="false" onclick="focusOutput()"
+                aria-label="singlish"></textarea>
         </div>
     </div>
 
-    <div class="footer">
-    Available on <a href="https://github.com/notnavindu/realtime-singlish">Github</a>
+    <br><br>
+
+    <!--Transliteration Sceme-->
+
+
+    <div class="scheme">
+        <h2 style="color:#03DAC6">Cheat Sheet</h2>
+
+        <!-- Vowels -->
+        <h3 style="color:#BB86FC"><i>Vowels</i></h3>
+        <table>
+            <tr>
+                <td>a අ</td>
+                <td>aa ආ</td>
+                <td>A ඇ</td>
+                <td>Aa ඈ</td>
+                <td>i ඉ</td>
+                <td>ii ඊ</td>
+            </tr>
+            <tr>
+                <td>u උ</td>
+                <td>uu ඌ</td>
+                <td><i>k</i><b>ru</b> කෘ</td>
+                <td><i>k</i><b>ruu</b> කෲ</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>e එ</td>
+                <td>ea ඒ</td>
+                <td>I ඓ</td>
+                <td>o ඔ</td>
+                <td>oe ඕ</td>
+                <td>au ඖ</td>
+            </tr>
+
+        </table>
+        <br>
+        <!-- Vowels -->
+        <h3 style="color:#BB86FC"><i>Consonants</i></h3>
+        <table>
+
+            <tr>
+                <td>a\n අං</td>
+                <td>a\h අඃ</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>ka ක</td>
+                <td>kha ඛ</td>
+                <td>ga ග</td>
+                <td>gha ඝ</td>
+                <td>\N ඞ</td>
+                <td>nnga ඟ</td>
+            </tr>
+            <tr>
+                <td>cha ච</td>
+                <td>Cha ඡ</td>
+                <td>ja ජ</td>
+                <td>qa ඣ</td>
+                <td>KNa ඤ</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>ta ට</td>
+                <td>Ta ඨ</td>
+                <td>da ඨ</td>
+                <td>Da ඪ</td>
+                <td>Na ණ</td>
+                <td>nnda ඬ</td>
+            </tr>
+            <tr>
+                <td>tha ත </td>
+                <td>Tha ථ </td>
+                <td>dha ද </td>
+                <td>Dha ධ </td>
+                <td>na න </td>
+                <td>nndha ඳ</td>
+            </tr>
+            <tr>
+                <td>pa ප</td>
+                <td>P ඵ</td>
+                <td>ba බ</td>
+                <td>bha භ</td>
+                <td>ma ම</td>
+                <td>Ba ඹ</td>
+            </tr>
+            <tr>
+                <td>ya ය</td>
+                <td>ra ර</td>
+                <td>la ල</td>
+                <td>va ව</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>sha ශ </td>
+                <td>Sha ෂ </td>
+                <td>sa ස</td>
+                <td>ha හ</td>
+                <td>La ළ</td>
+                <td>fa ෆ</td>
+            </tr>
+        </table>
+
+        <!-- Specials  -->
+        <h3 style="color:#BB86FC"><i>Special</i></h3>
+        <table>
+            <tr>
+                <td>GNa ඥ</td>
+            </tr>
+
+        </table>
+
+        <!-- Deriving Consonants  -->
+        <h3 style="color:#BB86FC"><i>Special</i></h3>
+        <table>
+            <tr>
+                <td>g ග්</td>
+                <td>ga ග</td>
+                <td>gaa ගා</td>
+                <td>gA ගැ</td>
+                <td>gAa ගෑ</td>
+                <td>gi ගි</td>
+            </tr>
+            <tr>
+                <td>gii ගී</td>
+                <td>gu ගු</td>
+                <td>guu ගූ</td>
+                <td>ge ගෙ</td>
+                <td>gae ගේ</td>
+                <td>go ගො</td>
+            </tr>
+            <tr>
+                <td>goe ගෝ</td>
+                <td>gau ගෞ</td>
+                <td>gra ග්‍ර</td>
+                <td>graa ග්‍රා</td>
+                <td>grA ග්‍රැ</td>
+                <td>grAa ග්‍රෑ</td>
+            </tr>
+            <tr>
+                <td>gri ග්‍රි</td>
+                <td>grii ග්‍රී</td>
+                <td>gru ගෘ</td>
+                <td>gruu ගෲ</td>
+                <td>nnga ඟ</td>
+                <td>gYa ග්‍ය</td>
+            </tr>
+
+        </table>
     </div>
-    
+
+
+
+
+    <br><br>
+    <div class="footer">
+        Available on <a href="https://github.com/notnavindu/realtime-singlish">Github</a>
+    </div>
+
     <script src="scripts/main.js"></script>
-    
+
     <script>
-        if('serviceWorker' in navigator) {
-          navigator.serviceWorker
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker
                 .register('sw.js')
-                .then(function() { console.log("Service Worker Registered"); });
+                .then(function () { console.log("Service Worker Registered"); });
         }
     </script>
 
